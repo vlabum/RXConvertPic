@@ -32,7 +32,7 @@ class MainPresenter() : MvpPresenter<MainView>() {
                 viewState.showLoading()
                 converter!!.convert()
                     .observeOn(mainThreadScheduler)
-                    .subscribe { pic ->
+                    .subscribe { _ ->
                         viewState.hideLoading()
                     }
             }

@@ -1,6 +1,7 @@
 package ru.vlabum.android.gb.rxconvertpic.model
 
+import android.graphics.Bitmap
+
 interface IPicture {
-    fun get(): IPicture
-    fun process(): IPicture
+    fun getBitmap(): Bitmap
 }
